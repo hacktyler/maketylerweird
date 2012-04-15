@@ -24,3 +24,8 @@ To see your new dev server, visit:
 When you make a change to the theme, you'll need to run:
 
     fab reload
+
+If you want direct access to the server you can get that too:
+
+    vagrant ssh
+
