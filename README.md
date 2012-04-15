@@ -29,3 +29,5 @@ If you want direct access to the server you can get that too:
 
     vagrant ssh
 
+There isn't a deployment command yet, ask @onyxfish to write one once we have something ready to deply.
+
