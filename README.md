@@ -19,7 +19,7 @@ To get a development environment running do the following:
 
 To see your new dev server, visit:
 
-    http://localhost:4567
+http://localhost:4567
 
 When you make a change to the theme, you'll need to run:
 
