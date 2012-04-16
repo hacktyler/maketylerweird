@@ -21,7 +21,7 @@ To see your new dev server, visit:
 
 [http://localhost:4567](http://localhost:4567)
 
-When you make a change to the theme, you'll need to run:
+Changes to the templates should be picked up immediately, but if you make changes to the static assets you'll need to run:
 
     fab reload
 
