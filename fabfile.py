@@ -3,5 +3,5 @@
 from fabric.api import *
 
 def reload():
-    local('vagrant ssh -c "localwiki-manage collectstatic --noinput"')
+    local('vagrant ssh -c "sudo localwiki-manage collectstatic --noinput"')
 
