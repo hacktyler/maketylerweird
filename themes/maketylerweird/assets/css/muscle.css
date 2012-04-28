@@ -1304,15 +1304,16 @@ img, iframe {
 =
 ================================*/
 /* color variables */
-html {
+body {
   background: #e6f5f5;
   font-family: 'Open Sans', sans-serif;
   color: #52787e;
+  oveflow: hidden;
 }
-a {
+a, a:link {
   color: #d9583b;
 }
-a:hover {
+a:hover, a:link:hover {
   color: #92321c;
   color: #3e5b5f;
 }
@@ -1323,21 +1324,129 @@ h4,
 h5,
 h6 {
   font-weight: normal;
+  color: #3b747e;
+}
+/* overkill specificity is to override localwiki styles */
+#header h1,
+#content h1,
+#title_bar h1,
+#footer h1,
+#header h2,
+#content h2,
+#title_bar h2,
+#footer h2,
+#header h3,
+#content h3,
+#title_bar h3,
+#footer h3,
+#header h4,
+#content h4,
+#title_bar h4,
+#footer h4,
+#header h5,
+#content h5,
+#title_bar h5,
+#footer h5,
+#header h6,
+#content h6,
+#title_bar h6,
+#footer h6 {
+  font-weight: normal;
+  color: #3b747e;
 }
 #site_title {
   padding-left: 0;
   padding-top: 20px;
   background: transparent;
+  border: none;
+}
+#site_title img {
+  padding: 0;
 }
 #header {
   background: #d9583b url(../img/header_bg.png);
+  border-bottom: 2px solid #eaa190;
+  margin-bottom: 30px;
+  overflow: hidden;
+  padding-bottom: 10px;
 }
-#content_wrapper, #header_inner {
+#header .site_search {
+  padding: 10px;
+  margin: 0;
+  background: #c54326;
+  border: 1px #92321c;
+  margin-top: 41px;
+}
+#header #login_info {
+  margin: 0;
+  padding-bottom: 5px;
+  position: relative;
+  top: 40px;
+}
+#header .actions a {
+  color: #92321c;
+}
+#nav li a, #nav li a:link {
+  background-color: #8abfc8;
+  border: 1px solid #4b94a1;
+  text-transform: uppercase;
+  color: #33646c;
+  font-weight: bold;
+  padding: 5px 8px;
+}
+#nav li a:hover, #nav li a:link:hover {
+  background-color: #add2d8;
+  color: #23444a;
+  border: 1px solid #4b94a1;
+}
+#content_wrapper, #header_inner, #title_bar {
   max-width: 1140px;
+  min-width: 970px;
   padding: 0 20px;
   margin: 0 auto;
+  overflow: hidden;
 }
 #main {
+  margin: 0;
+}
+ul#nav {
+  padding: 0;
+  margin: 0;
+  position: static;
+}
+#footer_wrap {
+  background: #d9583b;
+  border-top: 2px solid #eaa190;
+  width: 100%;
+}
+#footer, #attributions, #powered_by {
+  background: transparent;
+  color: #672314;
+  max-width: 1140px;
+  min-width: 970px;
+  margin: 0 auto;
+  padding: 0 20px;
+  width: auto;
+}
+#footer a,
+#attributions a,
+#powered_by a,
+#footer a:link,
+#attributions a:link,
+#powered_by a:link {
+  color: #000000;
+}
+#powered_by * {
+  padding: 0;
+  margin: 0;
+}
+#footer {
+  font-style: italic;
+}
+#title_bar {
+  border-bottom: 2px solid #d9583b;
+}
+#object_tags {
   margin: 0;
 }
 /*==============================

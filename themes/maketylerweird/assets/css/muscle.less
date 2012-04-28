@@ -597,12 +597,16 @@ img, iframe { max-width: 100%;}
 @links: darken(@orange,10%);
 
 html {
+}
+
+body {
     background: @light_blue;
     font-family: 'Open Sans', sans-serif;
     color: @blue_text;
+    oveflow: hidden;
 }
 
-a {
+a, a:link {
     color: @orange;
     &:hover {
         color: darken(@orange,20%);
@@ -612,26 +616,125 @@ a {
 
 h1,h2,h3,h4,h5,h6 {
     font-weight: normal;
+    color: darken(@dark_blue,30%);
+}
+
+/* overkill specificity is to override localwiki styles */
+#header, #content, #title_bar, #footer {
+    h1,h2,h3,h4,h5,h6 {
+        font-weight: normal;
+        color: darken(@dark_blue,30%);
+    }
 }
 
 #site_title {
     padding-left: 0;
     padding-top: 20px;
     background: transparent;
+    border: none;
+
+    img {
+        padding: 0;
+    }
 }
 #header {
     background: @orange url(../img/header_bg.png);
+    border-bottom: 2px solid lighten(@orange, 20%);
+    margin-bottom: 30px;
+    overflow: hidden;
+    padding-bottom: 10px;
+
+    .site_search {
+        padding: 10px;
+        margin: 0;
+        background: darken(@orange,8%);
+        border: 1px darken(@orange,20%);
+        margin-top: 41px;
+    }
+
+    #login_info {
+        margin: 0;
+        padding-bottom: 5px;
+        position: relative;
+        top: 40px;
+    }
+
+    .actions a {
+        color: darken(@orange,20%);
+
+    }
 }
+
+#nav li a, #nav li a:link {
+    background-color: @dark_blue;
+    border: 1px solid darken(@dark_blue,20%);
+    text-transform: uppercase;
+    color: darken(@dark_blue,35%);
+    font-weight: bold;
+    padding: 5px 8px;
+}
+
+#nav li a:hover, #nav li a:link:hover {
+    background-color: lighten(@dark_blue,10%);
+    color: darken(@dark_blue,45%);
+    border: 1px solid darken(@dark_blue,20%);
+}
+
 #header_inner {
 }
 
-#content_wrapper, #header_inner {
+#content_wrapper, #header_inner, #title_bar {
     max-width: 1140px;
+    min-width: 970px;
     padding: 0 20px;
     margin: 0 auto;
+    overflow: hidden;
 }
 
 #main {
+    margin: 0;
+}
+
+ul#nav {
+    padding: 0;
+    margin: 0;
+    position: static;
+}
+
+#footer_wrap {
+    background: @orange;
+    border-top: 2px solid lighten(@orange, 20%);
+    width: 100%;
+}
+
+#footer, #attributions, #powered_by {
+    background: transparent;
+    color: darken(@orange,30%);
+    max-width: 1140px;
+    min-width: 970px;
+    margin: 0 auto;
+    padding: 0 20px;
+    width: auto;
+
+    a, a:link {
+        color: darken(@orange,55%);
+    }
+}
+
+#powered_by * {
+    padding: 0;
+    margin: 0;
+}
+
+#footer {
+    font-style: italic;
+}
+
+#title_bar {
+   border-bottom: 2px solid @orange; 
+}
+
+#object_tags {
     margin: 0;
 }
 
