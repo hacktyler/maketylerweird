@@ -18,10 +18,12 @@
 
   <link href="//fonts.googleapis.com/css?family=Cabin:regular,regularitalic,bold" rel="stylesheet" type="text/css">
   <link href="//fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css">
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 
   {% block media %}
   <link rel="stylesheet" href="{% static "theme/css/reset.css" %}">
   <link rel="stylesheet" href="{% static "theme/css/site.css" %}">
+  <link rel="stylesheet" href="{% static "theme/css/muscle.css" %}">
   {% endblock %}
   {% block head_extra %}{% endblock %}
 </head>
@@ -32,16 +34,18 @@
   {% block everything_wrapper %}
 
     <div id="header">
-      <div id="login_info">{% include "site/login_info.html" %}</div>
-      <div class="site_search">{% include "site/search_form.html" %}</div>
-      <div id="site_title">{% include "site/site_title.html" %}</div>
-      {% include "site/nav.html" %}
-      <div id="header_bar">
-          <div class="inner">
-            <h1 id="object_title">{% block header_title %}{% endblock %}</h1>
-            <div id="object_actions">{% block object_actions %}{% endblock %}</div>
-            <div id="object_subtitle">{% block header_subtitle %}{% endblock %}</div>
-          </div>
+      <div id="header_inner">
+        <div id="login_info">{% include "site/login_info.html" %}</div>
+        <div class="site_search">{% include "site/search_form.html" %}</div>
+        <div id="site_title"><a href="/"><img src="{% static "theme/img/logo.png" %}" alt="Make Tyler Weird" /></a></div>
+        {% include "site/nav.html" %}
+      </div>
+    </div>
+    <div id="title_bar">
+      <div class="inner">
+        <h1 id="object_title">{% block header_title %}{% endblock %}</h1>
+        <div id="object_actions">{% block object_actions %}{% endblock %}</div>
+        <div id="object_subtitle">{% block header_subtitle %}{% endblock %}</div>
       </div>
     </div>
 
@@ -75,23 +79,27 @@
         {% endblock %}
       {% endblock %}
     {% endblock %}
+      <div id="footer">
+       {% block footer %}
+       {% endblock %}
+      </div>
+
     </div>
 
-    <div id="footer">
-     {% block footer %}
-     {% endblock %}
-    </div>
+    <div id="footer_wrap">
 
-    <div id="attributions">
-     {% block attributions %}
-        {{ GLOBAL_LICENSE_NOTE|safe }}
-     {% endblock %}
-    </div>
+      <div id="attributions">
+       {% block attributions %}
+          {{ GLOBAL_LICENSE_NOTE|safe }}
+       {% endblock %}
+      </div>
 
-    <div id="powered_by">
-      {% block powered_by %}
-      <a href="http://localwiki.org/"><img src="{% static "theme/img/powered_by_localwiki.png" %}"/></a>
-      {% endblock %}
+      <div id="powered_by">
+        {% block powered_by %}
+        <a href="http://localwiki.org/"><img src="{% static "theme/img/powered_by_localwiki.png" %}"/></a>
+        {% endblock %}
+      </div>
+
     </div>
 
   {% endblock %}
