@@ -1324,85 +1324,21 @@ h5,
 h6 {
   font-weight: normal;
 }
+#site_title {
+  padding-left: 0;
+  padding-top: 20px;
+  background: transparent;
+}
 #header {
   background: #d9583b url(../img/header_bg.png);
-  margin-bottom: 60px;
-  border-bottom: 2px solid #f2c5bb;
 }
-#header nav {
-  text-align: center;
-  margin-top: 25px;
+#content_wrapper, #header_inner {
+  max-width: 1140px;
+  padding: 0 20px;
+  margin: 0 auto;
 }
-#header nav ul {
-  padding: 0;
-}
-#header nav ul li {
-  display: inline-block;
-  border-left: 1px solid #8abfc8;
-}
-#header nav ul li:nth-child(1) {
-  border-left: none;
-}
-#header nav ul li a {
-  display: inline-block;
-  padding: 10px 30px;
-  color: #8abfc8;
-  text-transform: uppercase;
-  text-decoration: none;
-  text-shadow: -2px 2px 0 #c94527;
-  letter-spacing: 1px;
-}
-#homepage_intro #main_img {
-  position: relative;
-  text-align: center;
-  padding-bottom: 30px;
-}
-#homepage_intro #main_img .12col {
-  background: #d9583b;
-}
-#homepage_intro #main_img img {
-  outline: 7px solid #d9583b;
-  margin-top: 10px;
-  background: #d9583b;
-}
-#homepage_intro #main_img #totally_non_semantic_decoration_div {
-  width: 550px;
-  height: 373px;
-  position: absolute;
-  right: 10px;
-  top: 10px;
-  z-index: -1;
-  border-right: 7px solid #d9583b;
-  border-bottom: 7px solid #d9583b;
-}
-.site_search {
-  position: absolute;
-  bottom: 60px;
-  right: 60px;
-  background: rgba(255, 255, 255, 0.4);
-  padding: 10px;
-}
-.site_search input {
-  background: #0f0;
-  background: rgba(255, 255, 255, 0.30000000000000004);
-  outline: 1px solid #fff;
-  border: none;
-  padding: 10px;
-  padding-top: 13px;
-}
-.site_search input.little {
-  background: #d9583b;
-  outline: 1px solid #eaa190;
-  text-transform: uppercase;
-  font-weight: bold;
-  color: #a73920;
-}
-#secondary ul {
-  padding: 0;
-  list-style-position: inside;
-}
-#secondary h2 {
-  border-bottom: 2px solid #d9583b;
+#main {
+  margin: 0;
 }
 /*==============================
 =   Override these styles

@@ -614,113 +614,25 @@ h1,h2,h3,h4,h5,h6 {
     font-weight: normal;
 }
 
-
+#site_title {
+    padding-left: 0;
+    padding-top: 20px;
+    background: transparent;
+}
 #header {
     background: @orange url(../img/header_bg.png);
-    margin-bottom: 60px;
-    border-bottom: 2px solid lighten(@orange, 30%);
-
-    #logo {
-    }
-
-    nav {
-
-        text-align: center;
-        margin-top: 25px;
-
-        ul {
-
-            padding: 0;
-
-            li {
-
-                display: inline-block;
-                border-left: 1px solid @dark_blue;
-
-                &:nth-child(1) {
-                    border-left: none;
-                }
-
-                a {
-                    display: inline-block;
-                    padding: 10px 30px;
-                    color: @dark_blue;
-                    text-transform: uppercase;
-                    text-decoration: none;
-                    text-shadow: -2px 2px 0 darken(@orange,7%);
-                    letter-spacing: 1px;
-                }
-
-            }
-        }
-    }
+}
+#header_inner {
 }
 
-#homepage_intro {
-
-    #main_img {
-        position: relative;
-        text-align: center;
-        padding-bottom: 30px;
-
-        .12col {
-            background: @orange;
-        }
-
-        img {
-            outline: 7px solid @orange;
-            margin-top: 10px;
-            background: @orange;
-        }
-
-        #totally_non_semantic_decoration_div {
-            width: 550px; 
-            height: 373px;
-            position: absolute;
-            right: 10px;
-            top: 10px;
-            z-index: -1;
-            border-right: 7px solid @orange;
-            border-bottom: 7px solid @orange;
-        }
-    }
+#content_wrapper, #header_inner {
+    max-width: 1140px;
+    padding: 0 20px;
+    margin: 0 auto;
 }
 
-.site_search {
-    position: absolute;
-    bottom: 60px;
-    right: 60px;
-    background: fadeout(#ffffff,60%);
-    padding: 10px;
-
-    input {
-        background: #0f0;
-        background: fadeout(#ffffff,70%);
-        outline: 1px solid #fff;
-        border: none;
-        padding: 10px;
-        padding-top: 13px;
-
-    }
-    input.little {
-        background: @orange;
-        outline: 1px solid lighten(@orange,20%);
-        text-transform: uppercase;
-        font-weight: bold;
-        color: darken(@orange,15%);
-    }
-
-}
-
-#secondary {
-    ul {
-        padding: 0;
-        list-style-position: inside;
-    }
-
-    h2 {
-        border-bottom: 2px solid @orange;
-    }
+#main {
+    margin: 0;
 }
 
 /*==============================
