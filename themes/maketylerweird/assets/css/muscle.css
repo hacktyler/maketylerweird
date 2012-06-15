@@ -1405,9 +1405,13 @@ h6 {
   position: relative;
   top: 40px;
 }
+#header .actions,
+#header .welcome {
+  color: #e6f5f5;
+}
 #header .actions a,
 #header .welcome a {
-  color: #92321c;
+  color: #f2c5bb;
 }
 #nav li a,
 #nav li a:link {
