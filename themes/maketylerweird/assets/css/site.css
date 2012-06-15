@@ -480,6 +480,7 @@ sup { vertical-align: super }
  * keep tables looking consistent we zero this out. */
 #content #page li p, .page_editor li p {
     margin-bottom: 0;
+    margin-top: 0;
 }
 
 /*
