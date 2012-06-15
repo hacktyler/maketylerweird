@@ -456,7 +456,7 @@ ol { list-style-type: decimal ; }
 ul, ol { margin-bottom: 1em; }
 
 li {
-    margin-left: 3em;
+    margin-left: 0;
     margin-bottom: 0.4em;
 }
 /* Text indent styles */
