@@ -12,7 +12,9 @@ section,
 summary {
   display: block;
 }
-audio, canvas, video {
+audio,
+canvas,
+video {
   display: inline-block;
   *display: inline;
   *zoom: 1;
@@ -44,7 +46,8 @@ body {
 a:focus {
   outline: thin dotted;
 }
-a:hover, a:active {
+a:hover,
+a:active {
   outline: 0;
 }
 h1 {
@@ -74,7 +77,8 @@ h6 {
 abbr[title] {
   border-bottom: 1px dotted;
 }
-b, strong {
+b,
+strong {
   font-weight: bold;
 }
 blockquote {
@@ -87,7 +91,8 @@ mark {
   background: #ff0;
   color: #000;
 }
-p, pre {
+p,
+pre {
   margin: 1em 0;
 }
 pre,
@@ -106,14 +111,16 @@ pre {
 q {
   quotes: none;
 }
-q:before, q:after {
+q:before,
+q:after {
   content: '';
   content: none;
 }
 small {
   font-size: 75%;
 }
-sub, sup {
+sub,
+sup {
   font-size: 75%;
   line-height: 0;
   position: relative;
@@ -134,10 +141,13 @@ ul {
 dd {
   margin: 0 0 0 40px;
 }
-menu, ol, ul {
+menu,
+ol,
+ul {
   padding: 0 0 0 40px;
 }
-nav ul, nav ol {
+nav ul,
+nav ol {
   list-style: none;
   list-style-image: none;
 }
@@ -183,7 +193,8 @@ textarea {
   *vertical-align: middle;
   /* 3 */
 }
-button, input {
+button,
+input {
   line-height: normal;
   /* 1 */
 }
@@ -198,10 +209,12 @@ input[type="submit"] {
   *overflow: visible;
   /* 3 */
 }
-button[disabled], input[disabled] {
+button[disabled],
+input[disabled] {
   cursor: default;
 }
-input[type="checkbox"], input[type="radio"] {
+input[type="checkbox"],
+input[type="radio"] {
   box-sizing: border-box;
   /* 1 */
   padding: 0;
@@ -219,10 +232,12 @@ input[type="search"] {
   /* 2 */
   box-sizing: content-box;
 }
-input[type="search"]::-webkit-search-decoration, input[type="search"]::-webkit-search-cancel-button {
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button {
   -webkit-appearance: none;
 }
-button::-moz-focus-inner, input::-moz-focus-inner {
+button::-moz-focus-inner,
+input::-moz-focus-inner {
   border: 0;
   padding: 0;
 }
@@ -236,7 +251,8 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-img, iframe {
+img,
+iframe {
   max-width: 100%;
 }
 /*====================================
@@ -498,7 +514,7 @@ img, iframe {
 /*==================================
 =   Big Screens
 ===================================*/
-@media only screen and (min-width:1180px) {
+@media only screen and (min-width: 1180px) {
   .container {
     padding-left: 20px;
     padding-right: 20px;
@@ -916,7 +932,7 @@ img, iframe {
 /*==================================
 =   Tablet Landscape
 ===================================*/
-@media only screen and (max-device-width: 1024px) and (orientation:landscape) {
+@media only screen and (max-device-width: 1024px) and (orientation: landscape) {
   .container {
     padding-left: 20px;
     padding-right: 20px;
@@ -1126,7 +1142,9 @@ img, iframe {
 =   Phone Portrait
 ===================================*/
 @media only screen and (max-width: 480px) {
-  .row, body, .container {
+  .row,
+  body,
+  .container {
     min-width: 0;
     margin-left: auto;
     margin-right: auto;
@@ -1214,7 +1232,9 @@ img, iframe {
 =   Phone Landscape
 ===================================*/
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-  .row, body, .container {
+  .row,
+  body,
+  .container {
     min-width: 0;
     margin-left: auto;
     margin-right: auto;
@@ -1310,10 +1330,12 @@ body {
   color: #52787e;
   oveflow: hidden;
 }
-a, a:link {
+a,
+a:link {
   color: #d9583b;
 }
-a:hover, a:link:hover {
+a:hover,
+a:link:hover {
   color: #92321c;
   color: #3e5b5f;
 }
@@ -1383,10 +1405,12 @@ h6 {
   position: relative;
   top: 40px;
 }
-#header .actions a {
+#header .actions a,
+#header .welcome a {
   color: #92321c;
 }
-#nav li a, #nav li a:link {
+#nav li a,
+#nav li a:link {
   background-color: #8abfc8;
   border: 1px solid #4b94a1;
   text-transform: uppercase;
@@ -1394,12 +1418,15 @@ h6 {
   font-weight: bold;
   padding: 5px 8px;
 }
-#nav li a:hover, #nav li a:link:hover {
+#nav li a:hover,
+#nav li a:link:hover {
   background-color: #add2d8;
   color: #23444a;
   border: 1px solid #4b94a1;
 }
-#content_wrapper, #header_inner, #title_bar {
+#content_wrapper,
+#header_inner,
+#title_bar {
   max-width: 1140px;
   min-width: 970px;
   padding: 0 20px;
@@ -1408,6 +1435,17 @@ h6 {
 }
 #main {
   margin: 0;
+}
+#content #page li p,
+.page_editor li p {
+  margin-top: 0;
+}
+#content #page td p,
+.page_editor td p {
+  margin-top: 0;
+}
+li {
+  margin-left: 0;
 }
 ul#nav {
   padding: 0;
@@ -1419,7 +1457,9 @@ ul#nav {
   border-top: 2px solid #eaa190;
   width: 100%;
 }
-#footer, #attributions, #powered_by {
+#footer,
+#attributions,
+#powered_by {
   background: transparent;
   color: #672314;
   max-width: 1140px;
@@ -1458,7 +1498,7 @@ ul#nav {
 ================================
 =   1140px #Big Screens
 ================================*/
-@media only screen and (min-width:1180px) {
+@media only screen and (min-width: 1180px) {
   
 }
 /*==================================
@@ -1470,7 +1510,7 @@ ul#nav {
 /*==================================
 =   Tablet Landscape
 ===================================*/
-@media only screen and (max-device-width: 1024px) and (orientation:landscape) {
+@media only screen and (max-device-width: 1024px) and (orientation: landscape) {
   
 }
 /*==================================
@@ -1489,7 +1529,8 @@ ul#nav {
 =   clear fix jargan 
 =   print styles
 =================================*/
-.clearfix:before, .clearfix:after {
+.clearfix:before,
+.clearfix:after {
   content: "\0020";
   display: block;
   height: 0;
@@ -1509,7 +1550,8 @@ ul#nav {
     filter: none !important;
     -ms-filter: none !important;
   }
-  a, a:visited {
+  a,
+  a:visited {
     color: #444 !important;
     text-decoration: underline;
   }
@@ -1519,27 +1561,34 @@ ul#nav {
   abbr[title]:after {
     content: "(" attr(title) ")";
   }
-  .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after {
+  .ir a:after,
+  a[href^="javascript:"]:after,
+  a[href^="#"]:after {
     content: "";
   }
-  pre, blockquote {
+  pre,
+  blockquote {
     border: 1px solid #999;
     page-break-inside: avoid;
   }
   thead {
     display: table-header-group;
   }
-  tr, img {
+  tr,
+  img {
     page-break-inside: avoid;
   }
   @page  {
     margin: 0.5cm;
   }
-  p, h2, h3 {
+  p,
+  h2,
+  h3 {
     orphans: 3;
     widows: 3;
   }
-  h2, h3 {
+  h2,
+  h3 {
     page-break-after: avoid;
   }
 }
