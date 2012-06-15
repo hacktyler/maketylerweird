@@ -1430,7 +1430,8 @@ h6 {
 }
 #content_wrapper,
 #header_inner,
-#title_bar {
+#title_bar,
+#main_header {
   max-width: 1140px;
   min-width: 970px;
   padding: 0 20px;
