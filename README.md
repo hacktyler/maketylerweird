@@ -14,7 +14,6 @@ To get a development environment running do the following:
     git clone git@github.com:hacktyler/maketylerweird.git
     cd maketylerweird
     vagrant box add maketylerweird http://media.hacktyler.com/vagrant/maketylerweird.box
-    vagrant init maketyleweird
     vagrant up
     fab reload
 
