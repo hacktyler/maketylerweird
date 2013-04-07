@@ -16,6 +16,7 @@ To get a development environment running do the following:
     vagrant box add maketylerweird http://media.hacktyler.com/vagrant/maketylerweird.box
     vagrant init maketyleweird
     vagrant up
+    fab reload
 
 To see your new dev server, visit:
 
